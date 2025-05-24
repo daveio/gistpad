@@ -54,7 +54,8 @@ bun run generate
 
 ## Deployment
 
-The site can be deployed as a static site to any hosting platform that supports static site hosting:
+The site can be deployed as a static site to any hosting platform which
+supports static site hosting:
 
 - Cloudflare Pages
 - Vercel
@@ -67,4 +68,4 @@ Copy `.env.example` to `.env` and configure your GitHub token and other settings
 
 ## License
 
-[MIT](LICENSE) 
+[MIT](LICENSE)
