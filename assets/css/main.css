@@ -3,301 +3,274 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    border-color: #45475a;
-  }
+	* {
+		border-color: #45475a;
+	}
 
-  html {
-    background-color: #1e1e2e !important;
-    color: #cdd6f4 !important;
-  }
+	html {
+		background-color: #1e1e2e !important;
+		color: #cdd6f4 !important;
+	}
 
-  body {
-    font-family:
-      "Source Sans Pro",
-      -apple-system,
-      BlinkMacSystemFont,
-      "Segoe UI",
-      Roboto,
-      sans-serif;
-    line-height: 1.6;
-    background-color: #1e1e2e !important;
-    color: #cdd6f4 !important;
-  }
+	body {
+		font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+			"Segoe UI", Roboto, sans-serif;
+		line-height: 1.6;
+		background-color: #1e1e2e !important;
+		color: #cdd6f4 !important;
+	}
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family:
-      "Inter",
-      -apple-system,
-      BlinkMacSystemFont,
-      "Segoe UI",
-      Roboto,
-      sans-serif;
-    font-weight: 600;
-    line-height: 1.3;
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
-  }
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+			sans-serif;
+		font-weight: 600;
+		line-height: 1.3;
+		margin-top: 2.5rem;
+		margin-bottom: 1rem;
+	}
 
-  h1 {
-    font-size: 2.5rem;
-    color: #cba6fc !important;
-    border-bottom: 3px solid #313244;
-    padding-bottom: 0.5rem;
-    margin-top: 0;
-  }
+	h1 {
+		font-size: 2.5rem;
+		color: #cba6fc !important;
+		border-bottom: 3px solid #313244;
+		padding-bottom: 0.5rem;
+		margin-top: 0;
+	}
 
-  h2 {
-    font-size: 2rem;
-    color: #f5c2e7 !important;
-    border-bottom: 2px solid #313244;
-    padding-bottom: 0.3rem;
-  }
+	h2 {
+		font-size: 2rem;
+		color: #f5c2e7 !important;
+		border-bottom: 2px solid #313244;
+		padding-bottom: 0.3rem;
+	}
 
-  h3 {
-    font-size: 1.5rem;
-    color: #89b4fa !important;
-  }
+	h3 {
+		font-size: 1.5rem;
+		color: #89b4fa !important;
+	}
 
-  h4 {
-    font-size: 1.25rem;
-    color: #74c7ec !important;
-  }
+	h4 {
+		font-size: 1.25rem;
+		color: #74c7ec !important;
+	}
 
-  h5 {
-    font-size: 1.1rem;
-    color: #89dceb !important;
-  }
+	h5 {
+		font-size: 1.1rem;
+		color: #89dceb !important;
+	}
 
-  h6 {
-    font-size: 1rem;
-    color: #94e2d5 !important;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-  }
+	h6 {
+		font-size: 1rem;
+		color: #94e2d5 !important;
+		text-transform: uppercase;
+		letter-spacing: 0.1rem;
+	}
 
-  code,
-  pre,
-  .hljs {
-    font-family:
-      "Victor Mono", "Fira Code", "JetBrains Mono", Consolas, "Courier New",
-      monospace !important;
-    font-feature-settings:
-      "liga" 1,
-      "calt" 1;
-    font-variant-ligatures: common-ligatures contextual;
-    text-rendering: optimizeLegibility;
-  }
+	code,
+	pre,
+	.hljs {
+		font-family: "Victor Mono", "Fira Code", "JetBrains Mono", Consolas,
+			"Courier New", monospace !important;
+		font-feature-settings: "liga" 1, "calt" 1;
+		font-variant-ligatures: common-ligatures contextual;
+		text-rendering: optimizeLegibility;
+	}
 
-  /* Scrollbar styling */
-  ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-  }
+	/* Scrollbar styling */
+	::-webkit-scrollbar {
+		width: 10px;
+		height: 10px;
+	}
 
-  ::-webkit-scrollbar-track {
-    background: #181825;
-    border-radius: 4px;
-  }
+	::-webkit-scrollbar-track {
+		background: #181825;
+		border-radius: 4px;
+	}
 
-  ::-webkit-scrollbar-thumb {
-    background: #45475a;
-    border-radius: 4px;
-  }
+	::-webkit-scrollbar-thumb {
+		background: #45475a;
+		border-radius: 4px;
+	}
 
-  ::-webkit-scrollbar-thumb:hover {
-    background: #585b70;
-  }
+	::-webkit-scrollbar-thumb:hover {
+		background: #585b70;
+	}
 }
 
 @layer components {
-  .blog-content {
-    @apply max-w-none prose prose-invert;
-  }
+	.blog-content {
+		@apply max-w-none prose prose-invert;
+	}
 
-  .blog-content h1 {
-    color: #cba6fc !important;
-    border-bottom: 1px solid #313244;
-    font-family: "Inter", sans-serif;
-  }
+	.blog-content h1 {
+		color: #cba6fc !important;
+		border-bottom: 1px solid #313244;
+		font-family: "Inter", sans-serif;
+	}
 
-  .blog-content h2 {
-    color: #f5c2e7 !important;
-    border-bottom: 1px solid #313244;
-    font-family: "Inter", sans-serif;
-  }
+	.blog-content h2 {
+		color: #f5c2e7 !important;
+		border-bottom: 1px solid #313244;
+		font-family: "Inter", sans-serif;
+	}
 
-  .blog-content h3 {
-    color: #89b4fa !important;
-    font-family: "Inter", sans-serif;
-  }
+	.blog-content h3 {
+		color: #89b4fa !important;
+		font-family: "Inter", sans-serif;
+	}
 
-  .blog-content h4 {
-    color: #74c7ec !important;
-    font-family: "Inter", sans-serif;
-  }
+	.blog-content h4 {
+		color: #74c7ec !important;
+		font-family: "Inter", sans-serif;
+	}
 
-  .blog-content h5 {
-    color: #89dceb !important;
-    font-family: "Inter", sans-serif;
-  }
+	.blog-content h5 {
+		color: #89dceb !important;
+		font-family: "Inter", sans-serif;
+	}
 
-  .blog-content h6 {
-    color: #94e2d5 !important;
-    font-family: "Inter", sans-serif;
-  }
+	.blog-content h6 {
+		color: #94e2d5 !important;
+		font-family: "Inter", sans-serif;
+	}
 
-  .blog-content p {
-    color: #cdd6f4 !important;
-    font-family: "Source Sans Pro", sans-serif;
-  }
+	.blog-content p {
+		color: #cdd6f4 !important;
+		font-family: "Source Sans Pro", sans-serif;
+	}
 
-  .blog-content a {
-    color: #89b4fa !important;
-    text-decoration: none;
-    transition: color 0.2s ease;
-  }
+	.blog-content a {
+		color: #89b4fa !important;
+		text-decoration: none;
+		transition: color 0.2s ease;
+	}
 
-  .blog-content a:hover {
-    color: #74c7ec !important;
-    text-decoration: underline;
-  }
+	.blog-content a:hover {
+		color: #74c7ec !important;
+		text-decoration: underline;
+	}
 
-  .blog-content strong {
-    color: #f5e0dc !important;
-  }
+	.blog-content strong {
+		color: #f5e0dc !important;
+	}
 
-  .blog-content em {
-    color: #f2cdcd !important;
-  }
+	.blog-content em {
+		color: #f2cdcd !important;
+	}
 
-  .blog-content code {
-    color: #f5e0dc !important;
-    background-color: #313244 !important;
-    padding: 0.125rem 0.25rem;
-    border-radius: 0.25rem;
-    font-family: "Victor Mono", "Fira Code", monospace !important;
-    font-feature-settings:
-      "liga" 1,
-      "calt" 1;
-    font-variant-ligatures: common-ligatures contextual;
-  }
+	.blog-content code {
+		color: #f5e0dc !important;
+		background-color: #313244 !important;
+		padding: 0.125rem 0.25rem;
+		border-radius: 0.25rem;
+		font-family: "Victor Mono", "Fira Code", monospace !important;
+		font-feature-settings: "liga" 1, "calt" 1;
+		font-variant-ligatures: common-ligatures contextual;
+	}
 
-  /* Override all pre and code block styling to remove black borders */
-  .blog-content pre {
-    background-color: #313244 !important;
-    border: none !important;
-    border-radius: 0.5rem !important;
-    padding: 1rem !important;
-    margin: 1rem 0 !important;
-    font-family: "Victor Mono", "Fira Code", monospace !important;
-    font-feature-settings:
-      "liga" 1,
-      "calt" 1;
-    font-variant-ligatures: common_ligatures contextual;
-    box-shadow: none !important;
-    outline: none !important;
-  }
+	/* Override all pre and code block styling to remove black borders */
+	.blog-content pre {
+		background-color: #313244 !important;
+		border: none !important;
+		border-radius: 0.5rem !important;
+		padding: 1rem !important;
+		margin: 1rem 0 !important;
+		font-family: "Victor Mono", "Fira Code", monospace !important;
+		font-feature-settings: "liga" 1, "calt" 1;
+		font-variant-ligatures: common_ligatures contextual;
+		box-shadow: none !important;
+		outline: none !important;
+	}
 
-  .blog-content pre code {
-    background-color: transparent !important;
-    border: none !important;
-    padding: 0 !important;
-    border-radius: 0 !important;
-    font-family: "Victor Mono", "Fira Code", monospace !important;
-    font-feature-settings:
-      "liga" 1,
-      "calt" 1;
-    font-variant-ligatures: common_ligatures contextual;
-    color: inherit !important;
-  }
+	.blog-content pre code {
+		background-color: transparent !important;
+		border: none !important;
+		padding: 0 !important;
+		border-radius: 0 !important;
+		font-family: "Victor Mono", "Fira Code", monospace !important;
+		font-feature-settings: "liga" 1, "calt" 1;
+		font-variant-ligatures: common_ligatures contextual;
+		color: inherit !important;
+	}
 
-  .blog-content blockquote {
-    color: #bac2de !important;
-    border-left-color: #89b4fa !important;
-    background-color: #313244;
-    border-radius: 0 0.5rem 0.5rem 0;
-  }
+	.blog-content blockquote {
+		color: #bac2de !important;
+		border-left-color: #89b4fa !important;
+		background-color: #313244;
+		border-radius: 0 0.5rem 0.5rem 0;
+	}
 
-  /* Ensure all code elements use Victor Mono with ligatures and override highlight.js styles */
-  .hljs,
-  .hljs *,
-  pre.hljs,
-  code.hljs {
-    font-family: "Victor Mono", "Fira Code", monospace !important;
-    font-feature-settings:
-      "liga" 1,
-      "calt" 1;
-    font-variant-ligatures: common_ligatures contextual;
-    background-color: #313244 !important;
-    border: none !important;
-    box-shadow: none !important;
-    outline: none !important;
-  }
+	/* Ensure all code elements use Victor Mono with ligatures and override highlight.js styles */
+	.hljs,
+	.hljs *,
+	pre.hljs,
+	code.hljs {
+		font-family: "Victor Mono", "Fira Code", monospace !important;
+		font-feature-settings: "liga" 1, "calt" 1;
+		font-variant-ligatures: common_ligatures contextual;
+		background-color: #313244 !important;
+		border: none !important;
+		box-shadow: none !important;
+		outline: none !important;
+	}
 
-  /* Card hover effects */
-  .card-hover {
-    transition:
-      transform 0.2s ease,
-      border-color 0.2s ease,
-      box-shadow 0.2s ease;
-  }
+	/* Card hover effects */
+	.card-hover {
+		transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s
+			ease;
+	}
 
-  .card-hover:hover {
-    transform: translateY(-2px);
-    border-color: #585b70;
-    box-shadow:
-      0 10px 15px -3px rgba(0, 0, 0, 0.1),
-      0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  }
+	.card-hover:hover {
+		transform: translateY(-2px);
+		border-color: #585b70;
+		box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px
+			rgba(0, 0, 0, 0.05);
+	}
 
-  /* Tag hover effects */
-  .tag {
-    transition:
-      background-color 0.2s ease,
-      transform 0.2s ease;
-  }
+	/* Tag hover effects */
+	.tag {
+		transition: background-color 0.2s ease, transform 0.2s ease;
+	}
 
-  .tag:hover {
-    transform: scale(1.05);
-  }
+	.tag:hover {
+		transform: scale(1.05);
+	}
 
-  /* Button styles */
-  .btn {
-    transition: all 0.2s ease;
-  }
+	/* Button styles */
+	.btn {
+		transition: all 0.2s ease;
+	}
 
-  .btn:hover {
-    transform: translateY(-1px);
-    box-shadow:
-      0 4px 6px -1px rgba(0, 0, 0, 0.1),
-      0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  }
+	.btn:hover {
+		transform: translateY(-1px);
+		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px
+			rgba(0, 0, 0, 0.06);
+	}
 
-  .btn:active {
-    transform: translateY(0);
-  }
+	.btn:active {
+		transform: translateY(0);
+	}
 }
 
 /* Global overrides for highlight.js and any other code styling */
 pre,
 pre.hljs,
 .hljs {
-  background-color: #313244 !important;
-  border: none !important;
-  box-shadow: none !important;
-  outline: none !important;
+	background-color: #313244 !important;
+	border: none !important;
+	box-shadow: none !important;
+	outline: none !important;
 }
 
 code,
 pre code,
 .hljs code {
-  background-color: transparent !important;
-  border: none !important;
-  padding: 0 !important;
+	background-color: transparent !important;
+	border: none !important;
+	padding: 0 !important;
 }
