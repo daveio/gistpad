@@ -3,27 +3,24 @@ import type { Config } from "tailwindcss"
 export default {
   darkMode: ["class"],
   content: [
-    "./components/**/*.{js,vue,ts,tsx}",
+    "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",
     "./pages/**/*.vue",
     "./plugins/**/*.{js,ts}",
     "./app.vue",
     "./error.vue",
-    "*.{js,ts,jsx,tsx,mdx}",
-    "app/**/*.{ts,tsx}",
-    "components/**/*.{ts,tsx}",
+    "*.{js,ts,jsx,tsx,mdx}"
   ],
   theme: {
     container: {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1400px",
-      },
+        "2xl": "1400px"
+      }
     },
     extend: {
       colors: {
-        // Keep the default shadcn colors
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -31,33 +28,33 @@ export default {
         foreground: "hsl(var(--foreground))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          foreground: "hsl(var(--primary-foreground))"
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          foreground: "hsl(var(--secondary-foreground))"
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
+          foreground: "hsl(var(--destructive-foreground))"
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
+          foreground: "hsl(var(--muted-foreground))"
         },
         accent: {
           DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
+          foreground: "hsl(var(--accent-foreground))"
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
+          foreground: "hsl(var(--popover-foreground))"
         },
         card: {
           DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
+          foreground: "hsl(var(--card-foreground))"
         },
-        // Catppuccin Mocha color palette - use hex values directly
+        // Catppuccin Mocha color palette
         "ctp-rosewater": "#f5e0dc",
         "ctp-flamingo": "#f2cdcd",
         "ctp-pink": "#f5c2e7",
@@ -83,12 +80,12 @@ export default {
         "ctp-surface0": "#313244",
         "ctp-base": "#1e1e2e",
         "ctp-mantle": "#181825",
-        "ctp-crust": "#11111b",
+        "ctp-crust": "#11111b"
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        sm: "calc(var(--radius) - 4px)"
       },
       fontFamily: {
         sans: ["Source Sans Pro", "ui-sans-serif", "system-ui", "sans-serif"],
@@ -102,34 +99,21 @@ export default {
           "Consolas",
           "Liberation Mono",
           "Courier New",
-          "monospace",
-        ],
-      },
-      keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
-        },
-        glow: {
-          "0%, 100%": {
-            boxShadow: "0 0 5px rgba(203, 166, 252, 0.7), 0 0 10px rgba(203, 166, 252, 0.5)",
-          },
-          "50%": {
-            boxShadow: "0 0 20px rgba(203, 166, 252, 0.9), 0 0 30px rgba(203, 166, 252, 0.7)",
-          },
-        },
+          "monospace"
+        ]
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-        glow: "glow 2s ease-in-out infinite",
+        glow: "glow 2s ease-in-out infinite"
       },
-      borderWidth: {
-        "3": "3px",
+      keyframes: {
+        glow: {
+          "0%, 100%": {
+            boxShadow: "0 0 5px rgba(203, 166, 252, 0.7), 0 0 10px rgba(203, 166, 252, 0.5)"
+          },
+          "50%": {
+            boxShadow: "0 0 20px rgba(203, 166, 252, 0.9), 0 0 30px rgba(203, 166, 252, 0.7)"
+          }
+        }
       },
       typography: {
         DEFAULT: {
@@ -140,60 +124,60 @@ export default {
             a: {
               color: "#89b4fa",
               "&:hover": {
-                color: "#74c7ec",
-              },
+                color: "#74c7ec"
+              }
             },
             h1: {
               color: "#cba6fc",
-              fontFamily: "Inter, ui-sans-serif, system-ui, sans-serif",
+              fontFamily: "Inter, ui-sans-serif, system-ui, sans-serif"
             },
             h2: {
               color: "#f5c2e7",
-              fontFamily: "Inter, ui-sans-serif, system-ui, sans-serif",
+              fontFamily: "Inter, ui-sans-serif, system-ui, sans-serif"
             },
             h3: {
               color: "#89b4fa",
-              fontFamily: "Inter, ui-sans-serif, system-ui, sans-serif",
+              fontFamily: "Inter, ui-sans-serif, system-ui, sans-serif"
             },
             h4: {
               color: "#74c7ec",
-              fontFamily: "Inter, ui-sans-serif, system-ui, sans-serif",
+              fontFamily: "Inter, ui-sans-serif, system-ui, sans-serif"
             },
             h5: {
               color: "#89dceb",
-              fontFamily: "Inter, ui-sans-serif, system-ui, sans-serif",
+              fontFamily: "Inter, ui-sans-serif, system-ui, sans-serif"
             },
             h6: {
               color: "#94e2d5",
-              fontFamily: "Inter, ui-sans-serif, system-ui, sans-serif",
+              fontFamily: "Inter, ui-sans-serif, system-ui, sans-serif"
             },
             strong: {
-              color: "#f5e0dc",
+              color: "#f5e0dc"
             },
             code: {
               color: "#f5e0dc",
               fontFamily:
                 "Victor Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace",
               fontFeatureSettings: '"liga" 1, "calt" 1',
-              fontVariantLigatures: "common-ligatures contextual",
+              fontVariantLigatures: "common-ligatures contextual"
             },
             pre: {
               fontFamily:
                 "Victor Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace",
               fontFeatureSettings: '"liga" 1, "calt" 1',
-              fontVariantLigatures: "common-ligatures contextual",
+              fontVariantLigatures: "common-ligatures contextual"
             },
             figcaption: {
-              color: "#bac2de",
+              color: "#bac2de"
             },
             blockquote: {
               color: "#bac2de",
-              borderLeftColor: "#89b4fa",
-            },
-          },
-        },
-      },
-    },
+              borderLeftColor: "#89b4fa"
+            }
+          }
+        }
+      }
+    }
   },
-  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/line-clamp"), require("tailwindcss-animate")],
+  plugins: [require("@tailwindcss/typography"), require("tailwindcss-animate")]
 } satisfies Config
