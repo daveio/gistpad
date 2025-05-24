@@ -3,30 +3,50 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "description": "Blog which uses GitHub gists as a backend",
+  "author": {
+    "name": "Dave Williams",
+    "email": "dave@dave.io"
+  },
+  "packageManager": "bun@1.2.14",
+  "engines": {
+    "node": "~lts",
+    "bun": "~1.2.14"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "start": "nuxt start",
+    "lint": "trunk check -a --show-existing",
+    "format": "trunk fmt -a",
+    "clean": "rm -rf .nuxt dist .output node_modules"
   },
   "dependencies": {
-    "highlight.js": "^11.9.0",
+    "highlight.js": "^11.11.1",
     "js-yaml": "^4.1.0",
-    "marked": "^12.0.0",
-    "ofetch": "^1.3.3",
+    "marked": "^15.0.12",
+    "ofetch": "^1.4.1",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
-    "@nuxt/devtools": "latest",
-    "@nuxtjs/tailwindcss": "^6.11.4",
-    "@tailwindcss/typography": "^0.5.10",
+    "@nuxt/devtools": "^2.4.1",
+    "@nuxtjs/tailwindcss": "^6.14.0",
+    "@tailwindcss/typography": "^0.5.16",
     "@types/js-yaml": "^4.0.9",
-    "@types/marked": "^5.0.2",
-    "nuxt": "^3.10.3",
-    "typescript": "^5.3.3",
-    "vue-tsc": "^2.0.0"
+    "@types/marked": "^6.0.0",
+    "nuxt": "^3.17.4",
+    "typescript": "^5.8.3",
+    "vue-tsc": "^2.2.10"
   },
-  "trustedDependencies": ["@biomejs/biome", "@parcel/watcher", "esbuild"]
+  "trustedDependencies": ["@biomejs/biome", "@parcel/watcher", "esbuild"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daveio/gistpad.git"
+  },
+  "keywords": ["gist", "github", "blog", "nuxt", "vue"]
 }
