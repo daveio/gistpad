@@ -45,7 +45,7 @@ export async function downloadAndSaveImage(imageUrl: string): Promise<string> {
       return publicPath
     }
   } catch (error) {
-    console.error(`Error downloading image ${imageUrl}:`, error)
+    console.error("Error downloading image:", imageUrl, error)
     // Return the original URL as fallback
     return imageUrl
   }
