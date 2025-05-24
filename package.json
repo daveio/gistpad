@@ -20,8 +20,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "start": "nuxt start",
-    "lint": "trunk check -a --show-existing",
-    "format": "trunk fmt -a",
+    "lint": "trunk check -a --show-existing; bun run biome check",
+    "format": "biome format; trunk fmt -a",
     "clean": "rm -rf .nuxt dist .output node_modules"
   },
   "dependencies": {
