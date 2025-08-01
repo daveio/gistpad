@@ -1,42 +1,19 @@
 {
-  "name": "gistpad",
-  "version": "0.1.0",
-  "private": true,
-  "type": "module",
-  "description": "Blog which uses GitHub gists as a backend",
   "author": {
-    "name": "Dave Williams",
-    "email": "dave@dave.io"
-  },
-  "packageManager": "bun@1.2.14",
-  "engines": {
-    "node": "~lts",
-    "bun": "~1.2.14"
-  },
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "start": "nuxt start",
-    "lint": "trunk check -a --show-existing; bun run biome check",
-    "format": "biome format; trunk fmt -a",
-    "clean": "rm -rf .nuxt dist .output node_modules",
-    "test": "bun run jest",
-    "test:watch": "bun run jest --watch",
-    "test:coverage": "bun run jest --coverage"
+    "email": "dave@dave.io",
+    "name": "Dave Williams"
   },
   "dependencies": {
     "highlight.js": "^11.11.1",
     "js-yaml": "^4.1.0",
-    "marked": "^16.0.0",
+    "marked": "^16.1.1",
     "ofetch": "^1.4.1",
     "tailwindcss-animate": "^1.0.7"
   },
+  "description": "Blog which uses GitHub gists as a backend",
   "devDependencies": {
-    "@biomejs/biome": "^2.0.0",
-    "@nuxt/devtools": "^2.5.0",
+    "@biomejs/biome": "^2.1.3",
+    "@nuxt/devtools": "^2.6.2",
     "@nuxtjs/tailwindcss": "^6.14.0",
     "@tailwindcss/typography": "^0.5.16",
     "@types/jest": "^30.0.0",
@@ -44,18 +21,51 @@
     "@types/marked": "^6.0.0",
     "@vue/test-utils": "^2.4.6",
     "@vue/vue3-jest": "^29.2.6",
-    "jest": "^30.0.0",
-    "jest-environment-jsdom": "^30.0.0",
-    "nuxt": "^4.0.0",
+    "jest": "^30.0.5",
+    "jest-environment-jsdom": "^30.0.5",
+    "nuxt": "^4.0.2",
     "ts-jest": "^29.4.0",
-    "typescript": "^5.8.3",
-    "vue-tsc": "^3.0.0"
+    "typescript": "^5.9.2",
+    "vue-tsc": "^3.0.5"
   },
-  "trustedDependencies": ["@biomejs/biome", "@parcel/watcher", "esbuild"],
+  "engines": {
+    "bun": "^1.2.19",
+    "node": "^22.18.0"
+  },
+  "keywords": [
+    "gist",
+    "github",
+    "blog",
+    "nuxt",
+    "vue"
+  ],
   "license": "MIT",
+  "name": "gistpad",
+  "packageManager": "bun@1.2.19",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/daveio/gistpad.git"
   },
-  "keywords": ["gist", "github", "blog", "nuxt", "vue"]
+  "scripts": {
+    "build": "nuxt build",
+    "clean": "rm -rf .nuxt dist .output node_modules",
+    "dev": "nuxt dev",
+    "format": "biome format; trunk fmt -a",
+    "generate": "nuxt generate",
+    "lint": "trunk check -a --show-existing; bun run biome check",
+    "postinstall": "nuxt prepare",
+    "preview": "nuxt preview",
+    "start": "nuxt start",
+    "test": "bun run jest",
+    "test:coverage": "bun run jest --coverage",
+    "test:watch": "bun run jest --watch"
+  },
+  "trustedDependencies": [
+    "@biomejs/biome",
+    "@parcel/watcher",
+    "esbuild"
+  ],
+  "type": "module",
+  "version": "0.1.0"
 }
