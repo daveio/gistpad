@@ -32,13 +32,7 @@
     "bun": "^1.2.19",
     "node": "^22.18.0"
   },
-  "keywords": [
-    "gist",
-    "github",
-    "blog",
-    "nuxt",
-    "vue"
-  ],
+  "keywords": ["gist", "github", "blog", "nuxt", "vue"],
   "license": "MIT",
   "name": "gistpad",
   "packageManager": "bun@1.2.19",
@@ -61,11 +55,7 @@
     "test:coverage": "bun run jest --coverage",
     "test:watch": "bun run jest --watch"
   },
-  "trustedDependencies": [
-    "@biomejs/biome",
-    "@parcel/watcher",
-    "esbuild"
-  ],
+  "trustedDependencies": ["@biomejs/biome", "@parcel/watcher", "esbuild"],
   "type": "module",
   "version": "0.1.0"
 }
