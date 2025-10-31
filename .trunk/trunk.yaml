@@ -14,7 +14,7 @@ actions:
     - trunk-fmt-pre-commit
     - trunk-upgrade-available
 cli:
-  version: 1.22.15
+  version: 1.25.0
 lint: # https://docs.trunk.io/check/configuration
   disabled:
     - vale
@@ -23,19 +23,19 @@ lint: # https://docs.trunk.io/check/configuration
     - prettier
   enabled:
     - oxipng@9.1.5
-    - sourcery@1.37.0
-    - semgrep@1.116.0
-    - biome@1.9.4
+    - sourcery@1.40.0
+    - semgrep@1.142.0
+    - biome@2.3.2
     - dustilock@1.2.0
-    - gitleaks@8.26.0
-    - osv-scanner@2.0.2
-    - taplo@0.9.3
+    - gitleaks@8.28.0
+    - osv-scanner@2.2.4
+    - taplo@0.10.0
     - trunk-toolbox@0.5.4
-    - actionlint@1.7.7
-    - checkov@3.2.432
+    - actionlint@1.7.8
+    - checkov@3.2.489
     - git-diff-check
     - markdownlint@0.45.0
-    - trufflehog@3.88.33
+    - trufflehog@3.90.12
     - yamllint@1.37.1
   ignore:
     - linters:
@@ -46,11 +46,11 @@ lint: # https://docs.trunk.io/check/configuration
 plugins: # https://docs.trunk.io/plugins
   sources:
     - id: trunk
-      ref: v1.6.8
+      ref: v1.7.3
       uri: https://github.com/trunk-io/plugins
 runtimes: # https://docs.trunk.io/runtimes
   enabled:
     - go@1.21.0
-    - node@18.20.5
+    - node@22.16.0
     - python@3.10.8
 version: 0.1
